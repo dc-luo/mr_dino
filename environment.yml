@@ -1,0 +1,20 @@
+name: mr_dino
+channels: 
+    - conda-forge
+dependencies:
+    - python=3.10
+    - fenics=2019.1.0
+    - numpy 
+    - matplotlib
+    - tensorflow=2.11
+    - pip
+    - pip:
+        - scipy 
+        - gmsh
+        - pygmsh
+        - pyyaml
+
+variables:
+    OPENBLAS_NUM_THREADS: 1
+    OPENMP_NUM_THREADS: 1
+    OMP_NUM_THREADS: 1
